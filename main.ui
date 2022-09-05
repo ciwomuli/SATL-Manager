@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="tabTeams">
      <attribute name="title">
@@ -254,39 +254,360 @@
       <string>排阵管理</string>
      </attribute>
     </widget>
-    <widget class="QWidget" name="tabRestlu">
+    <widget class="QWidget" name="tabResult">
      <attribute name="title">
       <string>结果管理</string>
      </attribute>
+     <widget class="QComboBox" name="boxRound">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>10</y>
+        <width>121</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>53</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>轮次</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="addRound">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>10</y>
+        <width>21</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="editRound">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>10</y>
+        <width>113</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="delRound">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>10</y>
+        <width>21</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="editHomeTeam">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>300</y>
+        <width>113</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="editAwayTeam">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>330</y>
+        <width>113</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>300</y>
+        <width>53</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>主队</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>330</y>
+        <width>53</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>客队</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="addResult">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>360</y>
+        <width>21</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="delResult">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>360</y>
+        <width>21</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="editResult">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>360</y>
+        <width>41</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>编辑</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableDetail">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>40</y>
+        <width>441</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>选手1</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>选手2</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>地图</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>胜者</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLineEdit" name="editPlayer1">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>290</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="editPlayer2">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>290</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="editMap">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>290</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="editWinner">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>290</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="delDetailResult">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>320</y>
+        <width>21</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="addDetailResult">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>320</y>
+        <width>21</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="editDetailResult">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>320</y>
+        <width>41</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>编辑</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>350</y>
+        <width>111</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>导出为TL代码</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="openExcelResult">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>350</y>
+        <width>75</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>打开Excel</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="boxSheetResult">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>350</y>
+        <width>69</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="importResult">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>350</y>
+        <width>75</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>导入结果</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="listResult">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>191</width>
+        <height>241</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
    </widget>
-   <widget class="QLineEdit" name="textCode">
+   <widget class="QComboBox" name="boxCode">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>10</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>C</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>113</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="inputMask">
-     <string/>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="changeCode">
-    <property name="geometry">
-     <rect>
-      <x>140</x>
-      <y>10</y>
-      <width>71</width>
-      <height>24</height>
+      <width>53</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>切换级别</string>
+     <string>级别：</string>
     </property>
    </widget>
   </widget>

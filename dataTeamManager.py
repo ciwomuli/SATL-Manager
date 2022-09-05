@@ -1,7 +1,7 @@
 import json
 
 
-class DataManager:
+class DataTeamManager:
     def __init__(self, fileName):
         self.fileName = fileName
         with open(self.fileName, "r", encoding='utf8') as f:
